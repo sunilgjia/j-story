@@ -1,4 +1,4 @@
-import { IonHeader } from "@ionic/react";
+import { IonHeader, IonToolbar } from "@ionic/react";
 import styled from "styled-components";
 
 export const PageHeader = styled(IonHeader)`
@@ -8,6 +8,10 @@ export const PageHeader = styled(IonHeader)`
   &::after {
     background-image: none;
   }
+`;
+
+export const PageToolbar = styled(IonToolbar)`
+  --background: #e9eaed;
 `;
 
 export const LogoWrraper = styled.div`

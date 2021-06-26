@@ -1,4 +1,4 @@
-import { IonFooter } from "@ionic/react";
+import { IonFooter, IonRow } from "@ionic/react";
 import styled from "styled-components";
 
 export const PageFooter = styled(IonFooter)`
@@ -22,4 +22,10 @@ export const TermsOfService = styled.div`
   color: #f7f7f7;
   text-align: right;
   text-decoration: underline;
+`;
+
+export const FooterRow = styled(IonRow)`
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
 `;

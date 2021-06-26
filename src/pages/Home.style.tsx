@@ -1,5 +1,9 @@
-import { IonIcon, IonRow } from "@ionic/react";
+import { IonIcon, IonRow, IonContent } from "@ionic/react";
 import styled from "styled-components";
+
+export const PageContent = styled(IonContent)`
+  --background: #e9eaed;
+`;
 
 export const PageWrapper = styled.div`
   width: 84%;

@@ -1,15 +1,13 @@
-import { IonButton, IonButtons, IonIcon, IonToolbar } from "@ionic/react";
-
+import { IonButton, IonButtons, IonIcon } from "@ionic/react";
 // Icons
 import { close } from "ionicons/icons";
-
 // Style
-import { Logo, LogoWrraper, PageHeader } from "./header.style";
+import { Logo, LogoWrraper, PageHeader, PageToolbar } from "./header.style";
 
 const Header: React.FC = () => {
   return (
     <PageHeader>
-        <IonToolbar>
+        <PageToolbar>
           <LogoWrraper>
             <Logo src="assets/logo.svg" />
           </LogoWrraper>
@@ -18,7 +16,7 @@ const Header: React.FC = () => {
               <IonIcon slot="icon-only" icon={close} />
             </IonButton>
           </IonButtons>
-        </IonToolbar>
+        </PageToolbar>
       </PageHeader>
   );
 };

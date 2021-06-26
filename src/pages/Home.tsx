@@ -1,4 +1,4 @@
-import { IonCol, IonContent, IonPage, IonRow } from "@ionic/react";
+import { IonCol, IonPage, IonRow } from "@ionic/react";
 // Icons
 import { arrowForward } from "ionicons/icons";
 // Components
@@ -6,20 +6,17 @@ import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 // Style
 import {
-  ExperienceBoxWrapper,
-  ExperienceBox,
-  ExperienceTitle,
-  ForwardArrow,
-  PageDesc,
+  ExperienceBox, ExperienceBoxWrapper, ExperienceTitle,
+  ForwardArrow, PageContent, PageDesc,
   PageTitle,
-  PageWrapper,
+  PageWrapper
 } from "./Home.style";
 
 const Home: React.FC = () => {
   return (
     <IonPage id="home-page">
       <Header />
-      <IonContent fullscreen>
+      <PageContent fullscreen>
         <PageWrapper>
           <IonRow>
             <IonCol>
@@ -48,7 +45,7 @@ const Home: React.FC = () => {
             </ExperienceBox>
           </ExperienceBoxWrapper>
         </PageWrapper>
-      </IonContent>
+      </PageContent>
       <Footer /> 
     </IonPage>
   );

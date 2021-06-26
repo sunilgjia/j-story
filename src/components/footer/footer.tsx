@@ -1,27 +1,20 @@
-import { IonCol, IonRow } from "@ionic/react";
-
 // Style
 import {
-  FooterDesc,
-  FooterWrapper,
+  FooterDesc, FooterRow, FooterWrapper,
   PageFooter,
-  TermsOfService,
+  TermsOfService
 } from "./footer.style";
 
 const Footer: React.FC = () => {
   return (
     <PageFooter>
       <FooterWrapper>
-        <IonRow>
-          <IonCol>
-            <FooterDesc>
-              &#169; J-Story is the project of Jewish Heritage Network
-            </FooterDesc>
-          </IonCol>
-          <IonCol>
-            <TermsOfService>Terms of Service</TermsOfService>
-          </IonCol>
-        </IonRow>
+        <FooterRow>
+          <FooterDesc>
+            &#169; J-Story is the project of Jewish Heritage Network
+          </FooterDesc>
+          <TermsOfService>Terms of Service</TermsOfService>
+        </FooterRow>
       </FooterWrapper>
     </PageFooter>
   );
