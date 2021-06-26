@@ -1,46 +1,55 @@
+import { IonCol, IonContent, IonPage, IonRow } from "@ionic/react";
+// Icons
+import { arrowForward } from "ionicons/icons";
+// Components
+import Footer from "../components/footer/footer";
+import Header from "../components/header/header";
+// Style
 import {
-  IonButton,
-  IonButtons,
-  IonContent,
-  IonHeader, IonIcon,
-  IonImg, IonPage, IonThumbnail, IonToolbar
-} from "@ionic/react";
-import {
-  close
-} from "ionicons/icons";
-import styled from "styled-components";
-import "./Home.css";
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
+  ExperienceBoxWrapper,
+  ExperienceBox,
+  ExperienceTitle,
+  ForwardArrow,
+  PageDesc,
+  PageTitle,
+  PageWrapper,
+} from "./Home.style";
 
 const Home: React.FC = () => {
-  const logo: string = "http://placekitten.com/g/200/300";
-
   return (
     <IonPage id="home-page">
-      <IonHeader>
-        <IonToolbar>
-          <IonButtons>
-            <IonButton>
-              <IonThumbnail>
-                <IonImg src={logo} />
-              </IonThumbnail>
-            </IonButton>
-          </IonButtons>
-          <IonButtons slot="end">
-            <IonButton>
-              <IonIcon slot="icon-only" icon={close} />
-            </IonButton>
-          </IonButtons>
-        </IonToolbar>
-      </IonHeader>
+      <Header />
       <IonContent fullscreen>
-        <Title>Testing</Title>
+        <PageWrapper>
+          <IonRow>
+            <IonCol>
+              <PageTitle>Choose the Experience</PageTitle>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <PageDesc>
+                How do you want tour viewers to experience your story?
+              </PageDesc>
+            </IonCol>
+          </IonRow>
+          <ExperienceBoxWrapper>
+            <ExperienceBox>
+              <ExperienceTitle>Self-Guided tour</ExperienceTitle>
+              <ForwardArrow slot="icon-only" icon={arrowForward} />
+            </ExperienceBox>
+            <ExperienceBox>
+              <ExperienceTitle>Virtual Exhibit</ExperienceTitle>
+              <ForwardArrow slot="icon-only" icon={arrowForward} />
+            </ExperienceBox>
+            <ExperienceBox>
+              <ExperienceTitle>Online Seminar</ExperienceTitle>
+              <ForwardArrow slot="icon-only" icon={arrowForward} />
+            </ExperienceBox>
+          </ExperienceBoxWrapper>
+        </PageWrapper>
       </IonContent>
+      <Footer /> 
     </IonPage>
   );
 };
