@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "j-story",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
