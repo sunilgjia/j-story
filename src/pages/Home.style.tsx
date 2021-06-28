@@ -1,4 +1,4 @@
-import { IonIcon, IonRow, IonContent } from "@ionic/react";
+import { IonContent, IonIcon, IonRow } from "@ionic/react";
 import styled from "styled-components";
 
 export const PageContent = styled(IonContent)`
@@ -59,4 +59,18 @@ export const ForwardArrow = styled(IonIcon)`
   color: #0849ff;
   width: 26px;
   height: 26px;
+`;
+
+export const ArrowRightIconWrapper = styled.div`
+  margin-top: 12px;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  cursor: pointer;
+  svg,
+  svg > g > g {
+    height: 16px;
+    width: 16px;
+    fill: #0849ff;
+  }
 `;

@@ -1,16 +1,19 @@
 import { IonCol, IonPage, IonRow } from "@ionic/react";
+
 // Icons
-import { arrowForward } from "ionicons/icons";
 import { Link } from "react-router-dom";
+import { ReactComponent as ArrowRightIcon } from "../assets/icons/arrow-icon-right.svg";
+
 // Components
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
+
 // Style
 import {
+  ArrowRightIconWrapper,
   ExperienceBox,
   ExperienceBoxWrapper,
   ExperienceTitle,
-  ForwardArrow,
   PageContent,
   PageDesc,
   PageTitle,
@@ -20,7 +23,7 @@ import {
 const Home: React.FC = () => {
   return (
     <IonPage id="home-page">
-      <Header />
+      <Header showLeftIcon={false} />
       <PageContent fullscreen>
         <PageWrapper>
           <IonRow>
@@ -38,17 +41,23 @@ const Home: React.FC = () => {
           <ExperienceBoxWrapper>
             <ExperienceBox>
               <ExperienceTitle>Self-Guided tour</ExperienceTitle>
-              <ForwardArrow slot="icon-only" icon={arrowForward} />
+              <ArrowRightIconWrapper>
+                <ArrowRightIcon />
+              </ArrowRightIconWrapper>
             </ExperienceBox>
             <Link to="virtual-exhibit">
               <ExperienceBox>
                 <ExperienceTitle>Virtual Exhibit</ExperienceTitle>
-                <ForwardArrow slot="icon-only" icon={arrowForward} />
+                <ArrowRightIconWrapper>
+                  <ArrowRightIcon />
+                </ArrowRightIconWrapper>
               </ExperienceBox>
             </Link>
             <ExperienceBox>
               <ExperienceTitle>Online Seminar</ExperienceTitle>
-              <ForwardArrow slot="icon-only" icon={arrowForward} />
+              <ArrowRightIconWrapper>
+                <ArrowRightIcon />
+              </ArrowRightIconWrapper>
             </ExperienceBox>
           </ExperienceBoxWrapper>
         </PageWrapper>

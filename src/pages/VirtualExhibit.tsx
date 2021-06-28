@@ -1,34 +1,35 @@
 import { IonCol, IonPage, IonRow } from "@ionic/react";
-
-import { arrowForward, triangleSharp } from "ionicons/icons";
 import { useState } from "react";
 
+// Icons
+import { ReactComponent as ArrowRightIcon } from "../assets/icons/arrow-icon-right.svg";
+import { ReactComponent as CloseIcon } from "../assets/icons/close-icon.svg";
+
+// Components
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 
+// Style
 import {
+  ArrowRightIconWrapper,
+  DescriptionContent,
+  DescriptionTextArea,
+  ExperienceContent,
   FieldSet,
+  IconWrapper,
   Legend,
   LegendContainer,
   LegendLeftTitle,
-  LegendSeparator,
   LegendRightTitle,
+  LegendSeparator,
+  NextButton,
+  NextButtonLabel,
   PageContent,
   PageTitle,
   PageWrapper,
-  ExperienceContent,
-  DescriptionContent,
-  DescriptionTextArea,
-  TagContent,
   Tag,
-  IconWrapper,
-  ArrowRightIconWrapper,
-  NextButton,
-  NextButtonLabel,
+  TagContent,
 } from "./VirtualExhibit.style";
-
-import { ReactComponent as CloseIcon } from "../assets/icons/close-icon.svg";
-import { ReactComponent as ArrowRightIcon } from "../assets/icons/arrow-icon-right.svg";
 
 const VirtualExhibit: React.FC = () => {
   const [tags, setTags] = useState([
@@ -51,7 +52,7 @@ const VirtualExhibit: React.FC = () => {
 
   return (
     <IonPage id="home-page">
-      <Header />
+      <Header showLeftIcon={true} />
       <PageContent fullscreen>
         <PageWrapper>
           <IonRow>
