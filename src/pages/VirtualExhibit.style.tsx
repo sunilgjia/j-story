@@ -180,6 +180,7 @@ export const ArrowRightIconWrapper = styled.div`
   display: inline-block;
   margin-left: 15px;
   cursor: pointer;
+  vertical-align: middle;
   svg,
   svg > g > g {
     height: 14px;
