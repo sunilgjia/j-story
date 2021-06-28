@@ -15,7 +15,14 @@ export const PageToolbar = styled(IonToolbar)`
 `;
 
 export const LogoWrraper = styled.div`
-  text-align: center;
-`;
 
-export const Logo = styled.img``;
+  height: 54px;
+  width: 149px;
+  margin: 0 auto;
+  cursor: pointer;
+  svg,
+  svg > g > g {
+    height: 54px;
+    width: 149px;
+  }
+`;

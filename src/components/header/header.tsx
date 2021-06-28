@@ -2,9 +2,12 @@ import { IonButton, IonButtons, IonIcon } from "@ionic/react";
 // Icons
 import { close } from "ionicons/icons";
 // Style
-import { Logo, LogoWrraper, PageHeader, PageToolbar } from "./header.style";
+import { LogoWrraper, PageHeader, PageToolbar } from "./header.style";
 
 import { useHistory } from "react-router-dom";
+
+import { ReactComponent as LogoIcon } from "../../assets/icons/logo.svg";
+
 
 const Header: React.FC = () => {
   let history = useHistory();
@@ -13,7 +16,7 @@ const Header: React.FC = () => {
     <PageHeader>
       <PageToolbar>
         <LogoWrraper>
-          <Logo src="assets/logo.svg" />
+          <LogoIcon />
         </LogoWrraper>
         <IonButtons slot="end">
           <IonButton onClick={() => history.go(-1)}>
