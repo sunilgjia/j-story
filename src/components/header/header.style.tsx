@@ -11,7 +11,7 @@ export const PageHeader = styled(IonHeader)`
 `;
 
 export const PageToolbar = styled(IonToolbar)`
-  --background: #e9eaed;
+  --background: #fff;
 `;
 
 export const LogoWrraper = styled.div`

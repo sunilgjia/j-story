@@ -21,6 +21,7 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import VirtualExhibit from "./pages/VirtualExhibit";
 
 const App: React.FC = () => (
   <IonApp>
@@ -29,9 +30,12 @@ const App: React.FC = () => (
         <Route path="/" exact={true}>
           <Redirect to="/home" />
         </Route>
-        <Route path="/home" exact={true}>
-          <Home />
-        </Route>
+        <Route path="/home" exact={true} component={Home} />
+        <Route
+          path="/virtual-exhibit"
+          exact={true}
+          component={VirtualExhibit}
+        />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

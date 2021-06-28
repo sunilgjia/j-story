@@ -1,15 +1,20 @@
 import { IonCol, IonPage, IonRow } from "@ionic/react";
 // Icons
 import { arrowForward } from "ionicons/icons";
+import { Link } from "react-router-dom";
 // Components
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 // Style
 import {
-  ExperienceBox, ExperienceBoxWrapper, ExperienceTitle,
-  ForwardArrow, PageContent, PageDesc,
+  ExperienceBox,
+  ExperienceBoxWrapper,
+  ExperienceTitle,
+  ForwardArrow,
+  PageContent,
+  PageDesc,
   PageTitle,
-  PageWrapper
+  PageWrapper,
 } from "./Home.style";
 
 const Home: React.FC = () => {
@@ -35,10 +40,12 @@ const Home: React.FC = () => {
               <ExperienceTitle>Self-Guided tour</ExperienceTitle>
               <ForwardArrow slot="icon-only" icon={arrowForward} />
             </ExperienceBox>
-            <ExperienceBox>
-              <ExperienceTitle>Virtual Exhibit</ExperienceTitle>
-              <ForwardArrow slot="icon-only" icon={arrowForward} />
-            </ExperienceBox>
+            <Link to="virtual-exhibit">
+              <ExperienceBox>
+                <ExperienceTitle>Virtual Exhibit</ExperienceTitle>
+                <ForwardArrow slot="icon-only" icon={arrowForward} />
+              </ExperienceBox>
+            </Link>
             <ExperienceBox>
               <ExperienceTitle>Online Seminar</ExperienceTitle>
               <ForwardArrow slot="icon-only" icon={arrowForward} />

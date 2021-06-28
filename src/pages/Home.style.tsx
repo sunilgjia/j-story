@@ -2,7 +2,7 @@ import { IonIcon, IonRow, IonContent } from "@ionic/react";
 import styled from "styled-components";
 
 export const PageContent = styled(IonContent)`
-  --background: #e9eaed;
+  --background: #fff;
 `;
 
 export const PageWrapper = styled.div`
@@ -37,10 +37,15 @@ export const ExperienceBox = styled.div`
   height: 251px;
   text-align: center;
   padding: 76px 0px 50px 0px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #fff;
-  // background-color: red;
   margin: 15px;
+  box-shadow: 0 0 40px 20px rgb(113 124 156 / 10%);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const ExperienceTitle = styled.h3`
@@ -55,5 +60,3 @@ export const ForwardArrow = styled(IonIcon)`
   width: 26px;
   height: 26px;
 `;
-
-// #e9eaed
