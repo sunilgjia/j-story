@@ -237,3 +237,8 @@ http://ionicframework.com/docs/theming/ */
 a {
   text-decoration: none;
 }
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}

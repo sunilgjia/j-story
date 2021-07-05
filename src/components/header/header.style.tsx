@@ -28,7 +28,7 @@ export const LogoWrraper = styled.div`
 `;
 
 export const CloseIconWrapper = styled.div`
-  margin-top: 12px;
+  margin-top: 0.75rem;
   height: 16px;
   width: 16px;
   display: inline-block;
@@ -42,7 +42,7 @@ export const CloseIconWrapper = styled.div`
 `;
 
 export const ArrowLeftIconWrapper = styled.div`
-  margin-top: 12px;
+  margin-top: 0.75rem;
   height: 29.86px;
   width: 25px;
   display: inline-block;

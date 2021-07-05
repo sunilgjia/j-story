@@ -14,10 +14,10 @@ export const PageWrapper = styled.div`
 export const PageTitle = styled.h1`
   text-align: center;
   color: #0849FF;
-  Line height:54px;
-  font-size: 40px;
-  margin-top: 230px;
+  font-size: 2.5rem;
+  margin-top: 14.375rem;
   font-weight: bold;
+  font-family: "Source Sans Pro";
 `;
 
 export const FieldSet = styled.fieldset`
@@ -41,14 +41,14 @@ export const LegendContainer = styled.div`
 
 export const LegendLeftTitle = styled.div`
   float: left;
-  padding: 0 5px;
+  padding: 0 0.313rem;
   text-transform: uppercase;
   color: #8c9597;
   font-family: "Source Sans Pro";
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 1px;
-  line-height: 16px;
+  line-height: 1rem;
 `;
 
 export const LegendSeparator = styled.div`
@@ -56,25 +56,25 @@ export const LegendSeparator = styled.div`
   height: 1px;
   background-color: rgba(113, 124, 156, 0.5);
   width: 0;
-  margin: 7px 5px 0 5px;
+  margin: 0.438rem 0.313rem 0 0.313rem;
   flex: 1;
 `;
 
 export const LegendRightTitle = styled.div`
   float: left;
-  padding: 0 5px;
+  padding: 0 0.313rem;
   color: #8c9597;
   font-family: "Source Sans Pro";
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 1px;
-  line-height: 16px;
+  line-height: 1rem;
 `;
 
 export const ExperienceContent = styled.input`
   color: #0849ff;
   font-family: "Source Sans Pro";
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 0;
   line-height: 25px;
   padding: 0.5rem 0.25em;
@@ -87,9 +87,9 @@ export const DescriptionContent = styled.div`
   padding: 0.5rem 0.25em;
   color: #717c9c;
   font-family: "Source Sans Pro";
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 0;
-  line-height: 27px;
+  line-height: 1.688rem;
   display: grid;
   word-break: break-word;
   &::after {
@@ -108,15 +108,16 @@ export const DescriptionTextArea = styled.textarea`
   overflow: hidden;
   grid-area: 1 / 1 / 2 / 2;
   text-align: justify;
+  font-family: "Source Sans Pro";
 `;
 
 export const TagContent = styled.div`
   padding: 0.5rem 0.25em;
   color: #717c9c;
   font-family: "Source Sans Pro";
-  font-size: 20px;
+  font-size: 1.25em;
   letter-spacing: 0;
-  line-height: 27px;
+  line-height: 1.688rem;
 `;
 
 export const Tag = styled.div`
@@ -128,9 +129,9 @@ export const Tag = styled.div`
 
   color: #ffffff;
   font-family: "Source Sans Pro";
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0;
-  line-height: 36px;
+  line-height: 2.25rem;
   text-align: center;
 `;
 
@@ -138,7 +139,7 @@ export const IconWrapper = styled.div`
   height: 8.64px;
   width: 8.63px;
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 0.313rem;
   cursor: pointer;
   svg,
   svg > g > g {
@@ -155,10 +156,10 @@ export const NextButton = styled.button`
   background-color: #fac807;
   color: #2a2a2a;
   font-family: "Source Sans Pro";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 20px;
+  line-height: 1.25rem;
   cursor: pointer;
 `;
 
@@ -167,10 +168,10 @@ export const NextButtonLabel = styled.label`
   width: 89px;
   color: #2a2a2a;
   font-family: "Source Sans Pro";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 20px;
+  line-height: 1.25rem;
   cursor: pointer;
 `;
 
@@ -178,7 +179,7 @@ export const ArrowRightIconWrapper = styled.div`
   height: 14px;
   width: 17.11px;
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 0.938rem;
   cursor: pointer;
   vertical-align: middle;
   svg,
